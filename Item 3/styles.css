@@ -98,7 +98,6 @@ footer {
 .step:target {
   display: block;
   animation: fadeIn 0.5s ease-in-out;
-  aria-hidden: false;
 }
 
 /* When a step becomes the target, hide the intro */
@@ -119,10 +118,11 @@ footer {
 .recipe-image {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 500px;
   margin: 1.5rem auto;
   border-radius: 8px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
 }
 
 /* Ingredients and Tips */
@@ -265,5 +265,9 @@ h3:focus {
   .btn {
     flex: 1 0 100%;
     margin-bottom: 0.5rem;
+  }
+
+  .recipe-image {
+    height: 300px;
   }
 }
