@@ -7,38 +7,50 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <img src="logo.jpg" alt="Description of the image" class="logo" />
-    </header>
-    <nav>
-      <div class="protruding-section">
-        <p>
-          <span class="full-text"
-            ><a href="www.google.com" class="link">7hundredand77</a>, you're
-            back! <a href="www.google.com" class="link">preferences</a> <b>|</b>
-          </span>
-          <a href="www.google.com" class="mobile-text link">logout</a> :(
-        </p>
-      </div>
-      <div class="navbar-stats">
-        <p><b>4,887</b> Comment</p>
-      </div>
-      <div class="navbar-stats">
-        <p><b>53,211</b> Link</p>
-      </div>
+    <div class="topmost">
+      <header>
+        <img src="logo.jpg" alt="Description of the image" class="logo" />
+      </header>
+      <nav>
+        <div class="protruding-section">
+          <p>
+            <span class="full-text"
+              ><a href="www.google.com" class="link">7hundredand77</a>, you're
+              back! <a href="www.google.com" class="link">preferences</a>
+              <b>|</b>
+            </span>
+            <a href="www.google.com" class="mobile-text link">logout</a> :(
+          </p>
+        </div>
+        <div class="navbar-stats">
+          <p><b>4,887</b> Comment</p>
+        </div>
+        <div class="navbar-stats">
+          <p><b>53,211</b> Link</p>
+        </div>
 
-      <div class="navbar-stats">
-        <img src="orangeMsg.jfif" alt="" class="icon" />
-        <p><b>1</b> New Msg</p>
-      </div>
+        <div class="navbar-stats">
+          <img src="orangeMsg.jfif" alt="" class="icon" />
+          <p><b>1</b> New Msg</p>
+        </div>
 
-      <div class="search-container">
-        <input type="text" class="search-input" />
-        <button class="search-button">
-          <img src="search.png" alt="" class="icon" />
-        </button>
+        <div class="search-container">
+          <input type="text" class="search-input" />
+          <button class="search-button">
+            <img src="search.png" alt="" class="icon" />
+          </button>
+        </div>
+      </nav>
+
+      <div class="feed-tabs">
+        <div class="feed-tab-open">what's hot</div>
+        <a href="#" class="feed-tab-closed">new</a>
+        <a href="#" class="feed-tab-closed">controversial</a>
+        <a href="#" class="feed-tab-closed">top</a>
+        <a href="#" class="feed-tab-closed">saved</a>
       </div>
-    </nav>
+    </div>
+
     <aside>
       <ul class="menu">
         <li>
@@ -68,7 +80,7 @@
         <li>
           <a href="#" class="link"><img src="default.png" alt="" /> WTF</a>
         </li>
-        <li>
+        <li class="chosen-li">
           <a href="#" class="link"
             ><img src="default.png" alt="" /> <span>IAMA</span></a
           >
@@ -104,16 +116,39 @@
         <li>
           <a href="#" class="link" style="color: blue">(MORE)</a>
         </li>
+
+        <div class="ad-container">
+          <div class="box">
+            <div class="box-title">Submit a link</div>
+            <div class="box-text">
+              to anything interesting: <br />
+              news article, blog entry, <br />
+              video, picture...
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-title">Create Community</div>
+            <div class="box-text">
+              ...for your LARPing <br />
+              community.<br />
+              ...because nothing in <br />
+              life is free (except <br />
+              reddits!) <br />
+              here on the side
+            </div>
+          </div>
+          <div style="position: relative">
+            <img
+              src="littleBigPlanet.jpg"
+              alt="Little Big Planet"
+              class="ads"
+            />
+          </div>
+          <div class="caption">tiniest ad in the world</div>
+        </div>
       </ul>
     </aside>
     <section class="feed">
-      <div class="feed-tabs">
-        <div class="feed-tab-open">what's hot</div>
-        <a href="#" class="feed-tab-closed">new</a>
-        <a href="#" class="feed-tab-closed">controversial</a>
-        <a href="#" class="feed-tab-closed">top</a>
-        <a href="#" class="feed-tab-closed">saved</a>
-      </div>
       <div class="posts-tab">
         <div class="post">
           <span class="post-order">1</span>
@@ -143,10 +178,10 @@
           </div>
         </div>
 
-        <div class="post">
+        <div class="post-chosen">
           <span class="post-order">2</span>
           <div class="upvotes upvoted">
-            <img src="upvote.svg" class="icon clickable" /> 215
+            <img src="upvote_grey.svg" class="icon clickable" /> 232
             <img src="downvote_grey.svg" class="icon clickable" />
           </div>
           <div class="post-details">
@@ -199,7 +234,7 @@
         <div class="post">
           <span class="post-order">4</span>
           <div class="upvotes">
-            <img src="upvote.svg" class="icon clickable" /> 215
+            <img src="upvote_grey.svg" class="icon clickable" /> 215
             <img src="downvote_grey.svg" class="icon clickable" />
           </div>
           <img src="post2pic.jpg" alt="What do you call..." class="post-pic" />
@@ -227,7 +262,7 @@
         <div class="post">
           <span class="post-order">5</span>
           <div class="upvotes">
-            <img src="upvote.svg" class="icon clickable" /> 9215
+            <img src="upvote_grey.svg" class="icon clickable" /> 9215
             <img src="downvote_grey.svg" class="icon clickable" />
           </div>
           <img src="post3pic.jpg" alt="What do you call..." class="post-pic" />
@@ -255,7 +290,7 @@
         <div class="post">
           <span class="post-order">6</span>
           <div class="upvotes">
-            <img src="upvote.svg" class="icon clickable" /> 215
+            <img src="upvote_grey.svg" class="icon clickable" /> 215
             <img src="downvote_grey.svg" class="icon clickable" />
           </div>
           <div class="post-details">
@@ -281,6 +316,33 @@
 
         <div class="post">
           <span class="post-order">7</span>
+          <div class="upvotes upvoted">
+            <img src="upvote.svg" class="icon clickable" /> 103
+            <img src="downvote_grey.svg" class="icon clickable" />
+          </div>
+          <div class="post-details">
+            <div class="title-container">
+              <a href="#" class="title"
+                >As a six-year-old, this was the best book ever</a
+              >
+              <span class="subdetails">(imgur.com)</span>
+            </div>
+            <span class="subdetails"
+              >submitted 112 hours ago by <a href="#" class="link">Maiko</a> to
+              gaming</span
+            >
+            <div class="post-interactions">
+              <a href="#" class="post-interaction">6,232 comments</a>
+              <a href="#" class="post-interaction">share</a>
+              <a href="#" class="post-interaction">save</a>
+              <a href="#" class="post-interaction">hide</a>
+              <a href="#" class="post-interaction">report</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <span class="post-order">8</span>
           <div class="upvotes">
             <img src="upvote_grey.svg" class="icon clickable" /> 215
             <img src="downvote_grey.svg" class="icon clickable" />
@@ -299,31 +361,6 @@
             </span>
             <div class="post-interactions">
               <a href="#" class="post-interaction">623 comments</a>
-              <a href="#" class="post-interaction">share</a>
-              <a href="#" class="post-interaction">save</a>
-              <a href="#" class="post-interaction">hide</a>
-              <a href="#" class="post-interaction">report</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="post">
-          <span class="post-order">8</span>
-          <div class="upvotes upvoted">
-            <img src="upvote.svg" class="icon clickable" /> 215
-            <img src="downvote_grey.svg" class="icon clickable" />
-          </div>
-          <div class="post-details">
-            <div class="title-container">
-              <a href="#"> IAM the guy who created this design AMA </a>
-              <span class="subdetails">(i.imgur.com)</span>
-            </div>
-            <span class="subdetails">
-              submitted 19 hours ago by
-              <a href="#" class="link">77hundredand77</a>
-            </span>
-            <div class="post-interactions">
-              <a href="#" class="post-interaction">200 comments</a>
               <a href="#" class="post-interaction">share</a>
               <a href="#" class="post-interaction">save</a>
               <a href="#" class="post-interaction">hide</a>
@@ -363,7 +400,7 @@
         <div class="post">
           <span class="post-order">10</span>
           <div class="upvotes">
-            <img src="upvote.svg" class="icon clickable" /> 215
+            <img src="upvote_grey.svg" class="icon clickable" /> 215
             <img src="downvote_grey.svg" class="icon clickable" />
           </div>
           <img src="post2pic.jpg" alt="What do you call..." class="post-pic" />
@@ -391,7 +428,7 @@
         <div class="post">
           <span class="post-order">11</span>
           <div class="upvotes">
-            <img src="upvote.svg" class="icon clickable" /> 9215
+            <img src="upvote_grey.svg" class="icon clickable" /> 9215
             <img src="downvote_grey.svg" class="icon clickable" />
           </div>
           <img src="post3pic.jpg" alt="What do you call..." class="post-pic" />
@@ -419,7 +456,7 @@
         <div class="post">
           <span class="post-order">12</span>
           <div class="upvotes">
-            <img src="upvote.svg" class="icon clickable" /> 215
+            <img src="upvote_grey.svg" class="icon clickable" /> 215
             <img src="downvote_grey.svg" class="icon clickable" />
           </div>
           <div class="post-details">
@@ -442,87 +479,332 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="right-container">
-        <div class="title-container">
-          <a href="#">IAM the guy who created this design AMA </a>
-          <span class="subdetails">(imgur.com)</span>
-        </div>
-        <span class="subdetails"
-          >http://img3.imageshack.us/img3/9807/goodlookingnew23.jpg</span
-        >
-        <div class="post-stats">
-          <span class="points">
-            <strong>232</strong> points (71% like it)
-          </span>
-          <span class="upvotes">390 up votes</span>
-          <span class="downvotes">158 down votes</span>
+
+        <div class="post">
+          <span class="post-order">13</span>
+          <div class="upvotes">
+            <img src="upvote_grey.svg" class="icon clickable" /> 215
+            <img src="downvote_grey.svg" class="icon clickable" />
+          </div>
+          <img src="post2pic.jpg" alt="What do you call..." class="post-pic" />
+          <div class="post-details">
+            <div class="title-container">
+              <a href="#" class="title"
+                >Thanks, Sally, That blowjob was... SFW</a
+              >
+              <span class="subdetails">(imgur.com)</span>
+            </div>
+            <span class="subdetails"
+              >submitted 11 hours ago by <a href="#" class="link">Maiko</a> to
+              gaming</span
+            >
+            <div class="post-interactions">
+              <a href="#" class="post-interaction">22 comments</a>
+              <a href="#" class="post-interaction">share</a>
+              <a href="#" class="post-interaction">save</a>
+              <a href="#" class="post-interaction">hide</a>
+              <a href="#" class="post-interaction">report</a>
+            </div>
+          </div>
         </div>
 
-        <div class="post-meta">
-          <span>submitted on 01 Feb 2011</span>
-          <span>200 comments</span>
-          <a href="#" class="sort">sort by</a>
+        <div class="post">
+          <span class="post-order">14</span>
+          <div class="upvotes">
+            <img src="upvote_grey.svg" class="icon clickable" /> 9215
+            <img src="downvote_grey.svg" class="icon clickable" />
+          </div>
+          <img src="post3pic.jpg" alt="What do you call..." class="post-pic" />
+          <div class="post-details">
+            <div class="title-container">
+              <a href="#" class="title"
+                >As a six-year-old, this was the best book ever</a
+              >
+              <span class="subdetails">(imgur.com)</span>
+            </div>
+            <span class="subdetails"
+              >submitted 112 hours ago by <a href="#" class="link">Maiko</a> to
+              gaming</span
+            >
+            <div class="post-interactions">
+              <a href="#" class="post-interaction">6,232 comments</a>
+              <a href="#" class="post-interaction">share</a>
+              <a href="#" class="post-interaction">save</a>
+              <a href="#" class="post-interaction">hide</a>
+              <a href="#" class="post-interaction">report</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="post-header">
+          <div class="title-container">
+            <a href="#">IAM the guy who created this design AMA </a>
+            <span class="subdetails">(imgur.com)</span>
+          </div>
+          <span class="subdetails"
+            >http://img3.imageshack.us/img3/9807/goodlookingnew23.jpg</span
+          >
+          <div class="post-header-details">
+            <div class="post-stats">
+              <div class="points">
+                <strong>232</strong>
+                <div>points (71% like it)</div>
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <span class="upvotes">390 up votes</span>
+                <span class="downvotes">158 down votes</span>
+              </div>
+            </div>
+            <div class="post-meta">
+              <span>submitted on 01 Feb 2011</span>
+              <div>
+                <span>200 comments</span> <a href="#" class="sort">sort by</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <div class="comment-input">
+            <input type="text" /><a href="#" class="formatting-link"
+              >formatting help</a
+            >
+          </div>
+          <button>save</button>
         </div>
 
         <div class="comments">
-          <div class="comment">
-            <div class="upvotes">
-              <img src="upvote.svg" class="icon clickable" /> 9215
-              <img src="downvote_grey.svg" class="icon clickable" />
+          <div class="comment-first">
+            <div class="comment-details">
+              <div class="upvotes">
+                <img src="upvote.svg" class="icon clickable" />
+                <img src="downvote_grey.svg" class="icon clickable" />
+              </div>
+              <div>
+                <span class="comment-author">UserNumber42</span>
+                <span class="comment-points">47 points</span>
+                <span class="comment-time">21 hours ago</span>
+                <p class="comment-text">
+                  Wow, the first Reddit redesign I've seen that doesn't suck,
+                  and I've been on this site for 4 years now (different
+                  accounts). Very functional. With wide screen monitors this
+                  could be very cool.
+                  <br /><br />
+                  Only suggestion is to have lower the width of the scores
+                  column for each post and the subreddit side bar so there is
+                  more room for the content.
+                </p>
+                <div class="comment-actions">
+                  <a href="#" class="link">permalink</a>
+                  <a href="#" class="link">report</a>
+                  <a href="#" class="link">reply</a>
+                </div>
+              </div>
             </div>
-            <span class="comment-author">UserNumber42</span>
-            <span class="comment-points">47 points</span>
-            <span class="comment-time">21 hours ago</span>
-            <p class="comment-text">
-              Wow, the first Reddit redesign I've seen that doesn't suck, and
-              I've been on this site for 4 years now (different accounts). Very
-              functional. With wide screen monitors this could be very cool.
-            </p>
-            <div class="comment-actions">
-              <a href="#">permalink</a>
-              <a href="#">report</a>
+
+            <!-- REPLY (nested) -->
+            <div class="comment">
+              <div class="comment-details">
+                <div class="upvotes">
+                  <img src="upvote.svg" class="icon clickable" />
+                  <img src="downvote_grey.svg" class="icon clickable" />
+                </div>
+                <div>
+                  <span class="comment-author">7hundredand77</span>
+                  <span class="comment-points">14 points</span>
+                  <span class="comment-time">20 hours ago</span>
+                  <p class="comment-text">
+                    Ha, yeah, since I know many people use widescreen monitors
+                    these days, this could make use of space a lot more
+                    effectively. A sweet spot with columns needs to be found
+                    where there is enough space to view everything perfectly.
+                    Since I just quickly put this one together, I didn't really
+                    spend much time finding that right balance.
+                  </p>
+                  <div class="comment-actions">
+                    <a href="#" class="link">permalink</a>
+                    <a href="#" class="link">parent</a>
+                    <a href="#" class="link">edit</a>
+                    <a href="#" class="link">delete</a>
+                    <a href="#" class="link">reply</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- NESTED REPLY -->
+              <div class="comment">
+                <div class="comment-details">
+                  <div class="upvotes">
+                    <img src="upvote_grey.svg" class="icon clickable" />
+                    <img src="downvote_grey.svg" class="icon clickable" />
+                  </div>
+                  <div>
+                    <span class="comment-author">aliasforspam</span>
+                    <span class="comment-points">7 points</span>
+                    <span class="comment-time">15 hours ago</span>
+                    <p class="comment-text">
+                      This looks like an email client. Brilliant!<br /><br />...I
+                      never realized how much Reddit is like reading email until
+                      now. I guess we could view things in brackets much like
+                      forwards from the uncle you otherwise don't communicate
+                      with. DAE blah blah = FWD: FWD: Fwd: You gotta read this!
+                    </p>
+                    <div class="comment-actions">
+                      <a href="#" class="link">permalink</a>
+                      <a href="#" class="link">parent</a>
+                      <a href="#" class="link">delete</a>
+                      <a href="#" class="link">reply</a>
+                    </div>
+
+                    <div class="comment">
+                      <div class="comment-details">
+                        <div class="upvotes">
+                          <img src="upvote_grey.svg" class="icon clickable" />
+                          <img src="downvote_grey.svg" class="icon clickable" />
+                        </div>
+                        <div>
+                          <span class="comment-author">Deterministic</span>
+                          <span class="comment-points">4 points</span>
+                          <span class="comment-time">11 hours ago</span>
+                          <p class="comment-text">
+                            It's funny that you mention email, because it looks
+                            ever-so-vaguely like
+                            <a href="#" class="link">Google Wave</a>, except
+                            that instead of Menu|Inboxes|Emails, it's
+                            Subreddits|Topics|Comments<br /><br />Nevertheless,
+                            it's an interesting concept for a redesign - a bit
+                            shinier, but still maintaining the minimalistic
+                            design.
+                          </p>
+                          <div class="comment-actions">
+                            <a href="#" class="link">permalink</a>
+                            <a href="#" class="link">parent</a>
+                            <a href="#" class="link">delete</a>
+                            <a href="#" class="link">reply</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comment">
+                <div class="comment-details">
+                  <div class="upvotes">
+                    <img src="upvote_grey.svg" class="icon clickable" />
+                    <img src="downvote_grey.svg" class="icon clickable" />
+                  </div>
+                  <div>
+                    <span class="comment-author">volve</span>
+                    <span class="comment-points">3 points</span>
+                    <span class="comment-time">10 hours ago</span>
+                    <p class="comment-text">
+                      Except, let's be honest; I only rarely maximize windows on
+                      my 24" monitors, almost never for something like passive
+                      entertainment such as Reddit. I personally feel a lot of
+                      these "wide-screen optimized" designs miss the point that
+                      they aren't likely the sole activity on said
+                      widescreen...<br /><br />(But it is a very nice design!)
+                    </p>
+                    <div class="comment-actions">
+                      <a href="#" class="link">permalink</a>
+                      <a href="#" class="link">parent</a>
+                      <a href="#" class="link">delete</a>
+                      <a href="#" class="link">reply</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comment">
+                <div class="comment-details">
+                  <div class="upvotes">
+                    <img src="upvote_grey.svg" class="icon clickable" />
+                    <img src="downvote_grey.svg" class="icon clickable" />
+                  </div>
+                  <div>
+                    <span class="comment-author">freshwire</span>
+                    <span class="comment-points">2 points</span>
+                    <span class="comment-time">9 hours ago</span>
+                    <p class="comment-text">
+                      You could have it that the column width can be changed (by
+                      just dragging around).
+                    </p>
+                    <div class="comment-actions">
+                      <a href="#" class="link">permalink</a>
+                      <a href="#" class="link">parent</a>
+                      <a href="#" class="link">delete</a>
+                      <a href="#" class="link">reply</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div class="comment">
+              <div class="comment-details">
+                <div class="upvotes">
+                  <img src="upvote_grey.svg" class="icon clickable" />
+                  <img src="downvote_grey.svg" class="icon clickable" />
+                </div>
+                <div>
+                  <span class="comment-author">gusthebus</span>
+                  <span class="comment-points">3 points</span>
+                  <span class="comment-time">15 hours ago</span>
+                  <p class="comment-text">
+                    I agree. Additionally, it wouldn't be difficult to provide a
+                    button to toggle from the current layout, to the OP's
+                    design.<br /><br />That would be a simple JavaScript to
+                    change out the page CSS. The dev team could take it one step
+                    further and cache the user's UI choice.
+                  </p>
+                  <div class="comment-actions">
+                    <a href="#" class="link">permalink</a>
+                    <a href="#" class="link">parent</a>
+                    <a href="#" class="link">delete</a>
+                    <a href="#" class="link">reply</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END reply -->
           </div>
 
-          <div class="comment">
-            <div class="upvotes">
-              <img src="upvote.svg" class="icon clickable" /> 9215
-              <img src="downvote_grey.svg" class="icon clickable" />
-            </div>
-            <span class="comment-author">7hundredand77</span>
-            <span class="comment-points">14 points</span>
-            <span class="comment-time">20 hours ago</span>
-            <p class="comment-text">
-              Ha, yeah, since I know many people use widescreen monitors these
-              days, this could make use of space a lot more effectively. A sweet
-              spot with columns needs to be found where there is enough space to
-              view everything perfectly.
-            </p>
-            <div class="comment-actions">
-              <a href="#">permalink</a>
-              <a href="#">parent</a>
-              <a href="#">edit</a>
-              <a href="#">delete</a>
-              <a href="#">reply</a>
-            </div>
-          </div>
+          <div class="comment-first">
+            <div class="comment-details">
+              <div class="upvotes">
+                <img src="upvote.svg" class="icon clickable" />
+                <img src="downvote_grey.svg" class="icon clickable" />
+              </div>
+              <div>
+                <span class="comment-author">7hundredand77</span>
+                <span class="comment-points">7 points</span>
+                <span class="comment-time">14 hours ago</span>
+                <p class="comment-text">
+                  I am going update the design tonight. There have been a lot of
+                  responses and feedback on what needs to be done:
+                </p>
 
-          <div class="comment">
-            <div class="upvotes">
-              <img src="upvote.svg" class="icon clickable" /> 9215
-              <img src="downvote_grey.svg" class="icon clickable" />
-            </div>
-            <span class="comment-author">aliasforspam</span>
-            <span class="comment-points">7 points</span>
-            <span class="comment-time">15 hours ago</span>
-            <p class="comment-text">
-              This looks like an email client. Brilliant!
-            </p>
-            <div class="comment-actions">
-              <a href="#">permalink</a>
-              <a href="#">parent</a>
-              <a href="#">report</a>
+                <ul>
+                  <li class="comment-text">Orange Icon for new messages</li>
+                  <li class="comment-text">
+                    A more reddit styled colour theme rather than the white grey
+                  </li>
+                  <li class="comment-text">Update column widths</li>
+                  <li class="comment-text">
+                    Allow dynamic sized story lengths
+                  </li>
+                </ul>
+                <div class="comment-actions">
+                  <a href="#" class="link">permalink</a>
+                  <a href="#" class="link">parent</a>
+                  <a href="#" class="link">edit</a>
+                  <a href="#" class="link">delete</a>
+                  <a href="#" class="link">reply</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
